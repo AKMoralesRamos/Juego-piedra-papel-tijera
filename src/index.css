@@ -33,7 +33,7 @@ h1 {
   text-shadow: 3px 3px 3px rgb(255, 255, 255);
   font-size: 60px;
   font-family: "Luckiest Guy", cursive;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   margin-top: 60px;
 }
 
@@ -189,8 +189,19 @@ span {
   background-position: center;
 }
 
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2,
+  h3,
+  ul {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 480px) {
-  
   h1 {
     font-size: 25px;
   }
@@ -206,29 +217,16 @@ span {
   ul {
     font-size: 14px;
   }
-  
+
   div#resultContent {
     width: 110%;
     height: 120px;
   }
-  
+
   span {
     width: 100px;
     height: 100px;
     font-size: 20px;
   }
-
 }
 
-@media screen and (max-width: 767px) {
-    h1 {
-        font-size: 40px;
-      }
-      
-      h2,
-      h3,
-      ul {
-        font-size: 14px;
-      }
-
-}
