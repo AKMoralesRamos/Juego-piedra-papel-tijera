@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayRockPaperScissors</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>ROCK - PAPER - SCISSORS</h1>
+        <section class="curiosidades">
+            <h2>Escoge una opción y el ordenador escogerá otra, si logras ser ganador de 5 rondas, podrás ver
+                la respuesta a la siguiente pregunta:
+            </h2>
+            <h2>¿Por qué los gatos siempre caen de pie?</h2>
+        </section>
+        <div id="resultContent">
+            <span id="userResult"></span>
+            <span>VS</span>
+            <span id="machineResult"></span>
+        </div>
+        <p id="result"></p>
+        <h3>Elige un ataque</h3>
+        </section>
+        <section class="botones">
+            <button id="piedra" value="piedra" type="button"></button>
+            <button id="papel" value="papel" type="button"></button>
+            <button id="tijera" value="tijera" type="button"></button>
+        </section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4>Los gatos tienen un sistema de equilibrio y orientación muy desarrollado, se conoce como "reflejo de
+                    enderezamiento" o "giro acrobático". Se basa en dos factores principales:Sistema vestibular: Los
+                    gatos tienen un órgano sensorial especializado en su oído interno llamado aparato vestibular. Este
+                    órgano detecta cambios en la posición y el movimiento, permitiendo al gato tener una percepción
+                    precisa de su orientación en el espacio.Columna vertebral flexible: La columna vertebral de los
+                    gatos es altamente flexible y puede girar independientemente su parte delantera y trasera. Esto les
+                    permite realizar movimientos de torsión y rotación rápidos.
+                </h4>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

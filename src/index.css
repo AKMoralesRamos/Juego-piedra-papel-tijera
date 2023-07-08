@@ -1,0 +1,234 @@
+html {
+  max-width: 2000px;
+  margin: auto 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: url(pexels-enric-cruz-lópez-6039245.jpg);
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+footer {
+  width: 100%;
+  height: 50%;
+  font-size: 20px;
+  color: #ffffff;
+  /*  background-color: #ffffff; */
+  padding: 20px;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #ff64bf;
+  text-shadow: 3px 3px 3px rgb(255, 255, 255);
+  font-size: 60px;
+  font-family: "Luckiest Guy", cursive;
+  margin-bottom:20px;
+  margin-top: 60px;
+}
+
+.botones {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+
+  /* -direction: row;
+    align-items: center;
+    justify-content: center; */
+}
+#piedra {
+  width: 100px;
+  height: 100px;
+  border: 3px solid;
+  border-color: #ff64bf;
+  border-radius: 5px;
+  background-image: url(image-piedra.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#papel {
+  width: 100px;
+  height: 100px;
+  border: 3px solid;
+  border-color: #ff64bf;
+  border-radius: 5px;
+  background-image: url(image-papel.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#tijera {
+  width: 100px;
+  height: 100px;
+  border: 3px solid;
+  border-color: #ff64bf;
+  border-radius: 5px;
+  background-image: url(image-tijera.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 20px;
+  cursor: pointer;
+}
+
+p {
+  min-height: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ea1ba2;
+  font-size: 22px;
+  background-color: rgba(4, 4, 4, 0.507);
+}
+
+h4 {
+  color: black;
+}
+
+h2,
+h3,
+ul {
+  min-height: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+  background-color: rgba(4, 4, 4, 0.507);
+}
+
+.curiosidades {
+  width: 90%;
+  text-align: center;
+  background-color: #0202029d;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+div#resultContent {
+  width: 110%;
+  height: 150px;
+  border-radius: 5px;
+  border: 2px solid #ff64bf;
+  background-color: #ff64bebf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 20% auto;
+  padding: 20px;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff64bf;
+}
+
+.modal-content span {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 480px) {
+  
+  h1 {
+    font-size: 25px;
+  }
+
+  #piedra,
+  #papel,
+  #tijera {
+    margin: 8px;
+  }
+
+  h2,
+  h3,
+  ul {
+    font-size: 14px;
+  }
+  
+  div#resultContent {
+    width: 110%;
+    height: 120px;
+  }
+  
+  span {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+      }
+      
+      h2,
+      h3,
+      ul {
+        font-size: 14px;
+      }
+
+}
